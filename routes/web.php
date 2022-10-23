@@ -36,7 +36,16 @@ Route::get('/signup', function ()
 Route::get('/login', [MainController::class,'login' ]);
 
 
-Route::get('/home','HomeController@index')->name('home');
+Route::get('/', function () 
+{
+    return view('/home');
+});
+Route::get('/home', function () 
+{
+    return view('/home');
+});
+
+
 
 
 
