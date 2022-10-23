@@ -17,9 +17,7 @@ use Laravel\Socialite\Facades\Socialite;
 Route::get('about_us', function () {
     return view('about_us');
 });
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('about_us', function () {
     return view('about_us');
@@ -28,18 +26,18 @@ Route::get('about_us_get', function () {
     return view('about_us_get');
 });
 
-Route::get('main', function () {
-    return view('main');
-});
-
-Route::get('/signup', [MainController::class,'signup' ]);
-Route::post('/signup', [MainController::class,'register' ])->name('signup');  
 
 
-Route::get('/login', function () 
+Route::get('/signup', function () 
 {
-    return view('/');
+    return view('/signup');
 });
+
+Route::get('/login', [MainController::class,'login' ]);
+
+
+Route::get('/home','HomeController@index')->name('home');
+
 
 
 Route::get('/price', function () {
@@ -49,35 +47,29 @@ Route::get('/price', function () {
 Route::get('/user_post', function () {
     return view('/user_post');
 });
+
 Route::get('/schdule', function () {
     return view('/schdule');
 });
+
 Route::get('/analysis', function () {
     return view('/analysis');
 });
 
 
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
- 
-Route::get('/auth/redirect', function () {
+/*Route::get('/auth/redirect', function () {
     return Socialite::driver('github')->redirect();
 });
  
-Route::get('/auth/callback', function () {
+//Route::get('/auth/callback', function () {
     $user = Socialite::driver('github')->user();
  
     // $user->token
 });
-
-
+*/
+//Route::redirect('login','' );
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
 
