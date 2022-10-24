@@ -26,8 +26,12 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+   
+    protected $redirectTo = 'user_post';
 
+
+
+    
     /**
      * Create a new controller instance.
      *
@@ -43,10 +47,7 @@ class LoginController extends Controller
 
     */
 }
- function redirectTo()
-{
-    return '/user_post';
-}
+
 
 /* function authenticate(Request $request)
     {
@@ -65,3 +66,4 @@ class LoginController extends Controller
             'email' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
     }*/
+     

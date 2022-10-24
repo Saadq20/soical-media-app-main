@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,18 +33,26 @@ Route::get('/signup', function ()
 {
     return view('/signup');
 });
+Route::get('/login', function () 
+{
+    
+    return view('/login');
+});
 
-Route::get('/login', [MainController::class,'login' ]);
+Route::get('/register', function () 
+{
+    
+    return view('/register ');
+});
+
+
 
 
 Route::get('/', function () 
 {
     return view('/home');
 });
-Route::get('/home', function () 
-{
-    return view('/home');
-});
+
 
 
 
@@ -77,7 +86,7 @@ Route::get('/analysis', function () {
     // $user->token
 });
 */
-//Route::redirect('login','' );
+Route::redirect('login','user_post' );
 Auth::routes();
 
 
