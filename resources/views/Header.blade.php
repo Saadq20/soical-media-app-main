@@ -1,3 +1,6 @@
+@extends('layout.main') 
+@section('content')
+
 <nav class="navbar navbar-default navbar-expand-lg" role="navigation-demo">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,4 +43,4 @@
   <!--                end default navbar -->
 
   
-  
+  @endsection
