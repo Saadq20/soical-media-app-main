@@ -10,7 +10,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
+      <!-- Collect the nav link forms, and other content for toggling -->
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
