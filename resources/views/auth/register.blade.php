@@ -126,12 +126,7 @@
                       </span>
                   @enderror 
                         </div></div>
-                   
-
-                   
-                       
-                      
-
+          
 
                     <div class="form-check">
                       <label class="form-check-label">

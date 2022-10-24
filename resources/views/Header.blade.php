@@ -29,7 +29,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{URL::to('/signup')}}" class="btn  btn-raised btn-round ">
+            <a href="{{URL::to('/register')}}" class="btn  btn-raised btn-round ">
               Register
             </a>
           </li>

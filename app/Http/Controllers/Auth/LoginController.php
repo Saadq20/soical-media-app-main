@@ -27,7 +27,7 @@ class LoginController extends Controller
      * @var string
      */
    
-    protected $redirectTo = 'user_post';
+    protected $redirectTo = '/user_post';
 
 
 

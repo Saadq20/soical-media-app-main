@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
           <form class="form" method="POST" action="{{ route('login') }}">
-
+           @csrf
             
             <div class="card card-login card-hidden">
               <div class=" card-header-primary text-center" style="">
@@ -62,7 +62,7 @@
                 </span>
               </div>
               <div class="card-footer justify-content-center">
-                <a href="" class="btn btn-rose btn-link btn-lg" style="color: #4169E1;">Lets Go
+                <button type="submit" class="btn btn-rose btn-link btn-lg" style="color: #4169E1;">Lets Go
                   {{ __('Login') }}
                 </a>
               </div>

@@ -29,14 +29,11 @@ Route::get('about_us_get', function () {
 
 
 
-Route::get('/signup', function () 
-{
-    return view('/signup');
-});
+
 Route::get('/login', function () 
 {
     
-    return view('/login');
+    return view('login');
 });
 
 Route::get('/register', function () 
