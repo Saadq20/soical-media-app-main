@@ -65,6 +65,10 @@
                 <button type="submit" class="btn btn-rose btn-link btn-lg" style="color: #4169E1;">Lets Go
                   {{ __('Login') }}
                 </a>
+                <div class="card-footer justify-content-center">
+                  <a href="{{url('auth/twitter')}}" class="btn btn-rose btn-link btn-lg" style="color: #4169E1;">Twitter 
+                    {{ __('Login') }}
+                  </a>
               </div>
             </div>
           </form>

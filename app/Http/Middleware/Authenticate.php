@@ -12,11 +12,8 @@ class Authenticate extends Middleware
      * @param  \Illuminate\Http\Request  $request
      * @return string|null
      */
-     public function handle($request, Closure $next)
-    {
-        if (Auth::check()) {
-            return $next($request);
-        }
-        return redirect()->route('login');
+    protected function redirectTo($request)
+{
+    return route('login');
 }
 }

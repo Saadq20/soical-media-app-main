@@ -20,9 +20,9 @@ return [
     ],
 
     'twitter' => [
-        'client_id' => env('TWITTER_API_KEY'),
-        'client_secret' => env('TWITTER_API_SECRET_KEY'),
-        'redirect' => env('TWITTER_CALLBACK_URL'),
+        'client_id' => 'U0d2eUl1bndmYlBVTV9ObG0yb1Q6MTpjaQ',
+        'client_secret' => 'uWqBwBq-G-MOBe_CKPmDSU85StfXZhPLQ35COxI9MRFgfL_L3c',
+        'redirect' => 'http://localhost:8000/twitter/callback',
     ],
 
     'mailgun' => [

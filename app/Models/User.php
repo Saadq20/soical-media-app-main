@@ -11,6 +11,11 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens;
+   use HasFactory;
+   use HasProfilePhoto;
+   use Notifiable;
+   use TwoFactorAuthenticatable;
 
     /**
      * The attributes that are mass assignable.
@@ -21,8 +26,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'provider',
-        'provider_id',
+       'twitter_id',
+       'oauth_type',
+
     ];
 
     /**
@@ -33,6 +39,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
+       'two_factor_recovery_codes',
+        'two_factor_secret',
     ];
 
     /**
@@ -42,5 +50,9 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+    ];
+
+     protected $appends = [
+        'profile_photo_url',
     ];
 }

@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -27,9 +28,24 @@ class LoginController extends Controller
      * @var string
      */
    
-    protected $redirectTo = '/user_post';
+   protected $redirectTo = '/user_post';
+    public function authenticate(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+ 
+        if (Auth::attempt($credentials)) {
+            // Authentication passed...
+         //  return $redirectTo = '/user_post';
+             return redirect()->intended('/user_post');
+        }
+    }
 
 
+    public function logout() {
+
+        Auth::logout();
+        return redirect('/');
+    }
 
     
     /**

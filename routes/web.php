@@ -85,3 +85,5 @@ Auth::routes();
 
 
 
+Route::get('auth/twitter', [TwitterController::class, 'loginwithTwitter']);
+Route::get('auth/callback/twitter', [TwitterController::class, 'cbTwitter']);
