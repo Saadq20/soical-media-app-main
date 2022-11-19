@@ -25,9 +25,7 @@
             <h5>Members Feed</h5>
             <div class="gallery-feed">
               <img src="./assets/img/saad.jpg" class="img img-raised rounded" alt="">
-              <img src="./assets/img/waleed.jpg" class="img img-raised rounded" alt="">
-              <img src="./assets/img/man.jpg" class="img img-raised rounded" alt="">
-              <img src="./assets/img/man.jpg" class="img img-raised rounded" alt="">
+           
               
             </div>
           </div>
