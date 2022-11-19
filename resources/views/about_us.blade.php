@@ -57,13 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="#pablo">
-                                    <img class="img" src="../assets/img/waleed.jpg">
-                                </a>
-                            </div>
+                  
                            
             
             <div class="about-contact">
